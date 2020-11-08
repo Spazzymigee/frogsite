@@ -1,53 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-function eraseText() {
-if( document.getElementById("question").value != ""){
-    document.getElementById("question").value = "";
-	document.getElementById("img_frog_box").style.visibility = 'visible';
-	setTimeout(eraseBox, 1500)
-}
+  <script>
+    function eraseText() {
+      if( document.getElementById("question").value != ""){
+        document.getElementById("question").value = "";
+	      document.getElementById("img_frog_box").style.visibility = 'visible';
+	      setTimeout(eraseBox, 3000)
+      }
+    }
 
-}
+    function eraseBox() {
+      document.getElementById("img_frog_box").style.visibility = 'hidden';
+    }
 
-function eraseBox() {
-	document.getElementById("img_frog_box").style.visibility = 'hidden';
-}
+  </script>
 
-
-</script>
-
-<link rel="stylesheet" href="frog.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-<title>What Does A Frog Know</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="frog.css">
+  <title>What Does A Frog Know</title>
 </head>
+
 <body>
+  <div class="first"></div>
 
-<div class="sideleft">
-	
-</div>
-<div class="frogquestion">
-	<img src="whatdoesafrogknow.png" class="img_frog" alt="Frog" id="frog" width=75% height=75%>
-</div>
+  <div class="second">
+	   <img src="whatdoesafrogknow.png" class="img_frog" alt="Frog" id="frog" width=75% height=75%>
+   </div>
 
-<div class="frogimg">
-  <h1 >Ask the frog a question</h1>
-<textarea id="question" name="w3review" rows="8" cols="50"></textarea>
-<br><br>
-<button type="button" onclick="javascript:eraseText();">submit</button>
-<br><br><br><br><br>
-<img src="ribit.png" class="img_box" alt="Frog" id="img_frog_box" width=25%>
-</div>
+   <div class="third">
+     <h1 >Ask the frog a question</h1>
+     <textarea class="textarea" id="question" name="w3review" rows="8" cols="50"></textarea>
+     <br><br>
+     <button type="button" onclick="javascript:eraseText();">submit</button>
+     <br><br><br><br><br>
+     <img src="ribit.png" class="img_box" alt="Frog" id="img_frog_box" width=25%>
+   </div>
 
-
-
-
-<div class="sideright">
-	
-</div>
-
-
+   <div class="forth"></div>
 
 </body>
 </html>

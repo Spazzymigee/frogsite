@@ -7,11 +7,6 @@
   padding: 15px;
 }
 
-.sideleft {
-  width: 10%;
-  float: left;
-  padding: 15px;
-}
 .frogimg {
   width: 50%;
   float: left;
@@ -24,10 +19,28 @@
   padding: 15px;
 }
 
-.sideright {
-  width: 10%;
-  float: left;
-  padding: 15px;
+.first {
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+.second {
+  padding:20px;
+  float:left;
+  width:30%; /* The width is 20%, by default */
+}
+
+.third {
+  padding:20px;
+  float:left;
+  width:30%; /* The width is 20%, by default */
+}
+
+
+.forth {
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
 }
 
 button {
@@ -68,8 +81,9 @@ button {
   visibility: hidden
 }
 
+
 h1 {
-font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -77,6 +91,22 @@ textarea {
   display: block;
   margin-left: strict;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 
+}
+
+@media screen and (max-width:800px) {
+  .first , .second , .third , .forth {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    text-align: center;
+  }
+  .textarea{
+    margin-left: auto;
+      width: 65%;
+
+  }
+  .img_frog {
+    width:60%;
+    margin-top: 0px;
+  }
 }
